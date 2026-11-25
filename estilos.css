@@ -1,0 +1,90 @@
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10 , .img11, .img12, .img13, .img14, .img15 ,.img16, .img17, .img18, .img19, .img20, .img21, .img22, .img23 ,.img24, .img25, .img26, .img27, .img28, .img29, .img30 {
+    width: 130px;
+    height: 180px;
+    object-fit: cover;
+       display: block;
+    margin: 20px auto;
+}
+body {
+    background-color: #e8f5e9;
+    font-family: Arial, sans-serif;
+    background-image: url("animaciones.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contenedor {
+    width: 650px;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: rgb(107, 144, 222);
+    border: 2px solid #75a6ef;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+h1, h2 {
+    text-align: center;
+    text-align: center;
+    text-shadow: 0 0 8px #68d9e1, 0 0 15px #4169E1;
+
+}
+body {
+    font-family: Verdana, sans-serif;
+}
+a {
+    display: inline-block;
+    background-color: #4169E1;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 12px;
+    border: 2px solid #75A6EF;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    margin: 8px;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a:hover {
+    background-color: #294A9B;
+    color: white;
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contenedor {
+    animation: aparecer 1s ease;
+}
+img {
+    border-radius: 15px;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #4169E1;
+}
+.imagen-zoom {
+    width: 250px;
+    display: block;
+    margin: 20px auto;
+    transition: transform 0.3s;
+}
+
+.imagen-zoom:hover {
+    transform: scale(1.2);
+}
